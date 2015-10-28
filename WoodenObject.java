@@ -1,4 +1,4 @@
-public class WoodenObject implements Wooden {
+public abstract class WoodenObject implements Wooden {
 
 	/**
 	* Not the Deep Purple album

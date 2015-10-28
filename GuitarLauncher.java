@@ -2,7 +2,8 @@ public class GuitarLauncher {
 
 	public static void main(String[] args) {
 	
-		new GuitarLauncher().runGuitar();
+//		new GuitarLauncher().runGuitar();
+		new GuitarLauncher().runWoodenGuitar();
 	}
 	
 	private void runGuitar() {
@@ -16,5 +17,19 @@ public class GuitarLauncher {
 		Guitar guitarAsGuitar = new Guitar();
 		guitarAsGuitar.play();
 		guitarAsGuitar.burn();
+	}
+	
+	private void runWoodenGuitar() {
+		
+		Instrument guitarAsInstrument = new WoodenGuitar();
+		guitarAsInstrument.play();
+		
+		Wooden guitarAsWooden = new WoodenGuitar();
+		guitarAsWooden.burn();
+		
+		WoodenGuitar guitarAsGuitar = new WoodenGuitar();
+		guitarAsGuitar.play();
+		guitarAsGuitar.burn();
+		
 	}
 }
